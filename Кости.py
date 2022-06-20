@@ -19,13 +19,13 @@ while ocki > 0:
     twocislo = random.randint(1,6)
     if (onecislo+twocislo < 7 and lyboecislo < 7) or (onecislo+twocislo > 7 and lyboecislo > 7):
         ocki += stavka
-        print(f"Ставка выйграна ,счёт{ocki}")
+        print(f"Ставка выйграна ,счёт {ocki}")
     elif onecislo+twocislo==lyboecislo:
         ocki += stavka*4
-        print(f"Ставка выйграна ,счёт{ocki}")
+        print(f"Ставка выйграна ,счёт {ocki}")
     else:
         ocki -= stavka
-        print(f"Ставка проиграна ,счёт{ocki}")
+        print(f"Ставка проиграна ,счёт {ocki}")
     if ocki>0:
         zaconcit = input("Вы хотите закончить игру(да или нет)? ")
         if zaconcit=="да":
